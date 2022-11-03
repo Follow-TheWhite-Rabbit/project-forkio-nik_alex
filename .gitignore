@@ -1,0 +1,7 @@
+.idea/**/*
+.vscode
+.DS_Store
+*.xml
+*.imlgit
+thums.db
+node_modules
