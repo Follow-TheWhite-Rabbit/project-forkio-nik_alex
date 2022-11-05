@@ -24,11 +24,10 @@
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^8.0.0",
-    "gulp-purgecss": "^5.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-minify": "0.0.3",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-watch": "^5.0.1",
     "sass": "^1.55.0"
   }
 }
