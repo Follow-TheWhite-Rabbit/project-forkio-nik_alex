@@ -2,7 +2,7 @@
   "name": "project-forkio-nik_alex",
   "version": "1.0.0",
   "description": "first group project in adaptive layout",
-  "main": "gulpfile.js",
+  "main": "index.html",
   "type": "module",
   "scripts": {
     "test": "start"
