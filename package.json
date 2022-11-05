@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "first group project in adaptive layout",
   "main": "gulpfile.js",
+  "type": "module",
   "scripts": {
     "test": "start"
   },
@@ -10,7 +11,7 @@
     "type": "git",
     "url": "git+https://gitlab.com/alekss3228/project-forkio-nik_alex.git"
   },
-  "author": "",
+  "author": "Nikita Golub & Alex Novoselov",
   "license": "ISC",
   "bugs": {
     "url": "https://gitlab.com/alekss3228/project-forkio-nik_alex/issues"
@@ -19,10 +20,14 @@
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^8.0.0",
+    "gulp-purgecss": "^5.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
     "sass": "^1.55.0"
   }

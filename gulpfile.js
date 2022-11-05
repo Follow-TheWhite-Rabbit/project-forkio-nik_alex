@@ -1,12 +1,14 @@
+
 import gulp from'gulp';
 import concat from'gulp-concat';
-import imagemin from'gulp-imagemin';
 import clean from'gulp-clean';
+import imagemin from'gulp-imagemin';
 import BS from 'browser-sync';
 const  browserSync = BS.create();
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
-const  sass = gulpSass(dartSass);
+const sass = gulpSass(dartSass);
+
 
 const concatJsFunc = () => gulp.src('src/js/**/*')
     .pipe(concat("all.js"))
@@ -32,7 +34,7 @@ gulp.task('convertCss', convertCss);
 gulp.task('minifyImages', minifyImages);
 gulp.task('cleanDist', cleanDist);
 gulp.task('build', gulp.series('cleanDist','concatJs','convertCss','minifyImages'));
-gulp.task('buildCreatingProject', gulp.series(cleanDist, convertCss, concatJsFunc))
+gulp.task('buildCreatingProject', gulp.series(cleanDist, convertCss, concatJsFunc, minifyImages));
 
 
 
