@@ -1,6 +1,5 @@
 .hero {
   width: 100%;
-  height: 103px;
   background-color: #27262A;
 
   &__navbar {
@@ -70,14 +69,6 @@
     }
   }
 
-  &__navigation-list-desktopMenu {
-    display: none;
-  }
-
-  &__navigation-list-desktopMenu-item {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-  }
 
   &__content-burgerMenu {
     top: 0;
@@ -129,6 +120,33 @@
     bottom: 20%;
   }
 
+  &__navigation-list-tabletMenu {
+  display: none;
+
+  }
+
+  &__navigation-list-desktopMenu {
+    display: none;
+  }
+
+  &__navigation-logo {
+    align-items: center;
+    display: flex;
+  }
+
+  &__navigation-logo-text {
+    display: none;
+    font-weight: 700;
+    color: #8D81AC;
+  }
+
+  &__navigation-logo-text-desktop {
+    display: none;
+    font-weight: 700;
+    color: #8D81AC;
+  }
+
+
   &__img {
     background-image: url("../img/header/header-title.jpg");
     background-repeat: no-repeat;
@@ -163,4 +181,162 @@
     font-weight: 400;
   }
 
+  &__offer {
+    position: relative;
+  }
+
+  &__offer-button {
+    font-size: 18px;
+    line-height: 20px;
+    color: $whiteColor;
+    border-radius: 40px;
+    border: none;
+    background: $lightPurple;
+    padding: 13px 29px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-weight: 700;
+  }
+
+  &__offer-text {
+    top: 35px;
+    left: 5%;
+    right: 5%;
+    position: absolute;
+    font-size: 14px;
+    line-height: 14px;
+    color: #848E97;
+    text-align: center;
+    font-weight: 400;
+  }
+
 }
+
+@media (min-width: $tablet) {
+  .hero {
+    &__img {
+      background-image: url("../img/header/header-content-background-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__burger-button {
+      display: none;
+    }
+
+    &__navigation-logo-text {
+      padding: 0 0 0 15px;
+      display: block;
+      font-size: 24px;
+      line-height: 16px;
+      color: $lightPurple;
+    }
+
+    &__navigation-list-tabletMenu {
+      display: flex;
+      justify-content: space-evenly;
+      max-width: 70%;
+      margin: 10px auto 0;
+    }
+
+    &__navigation-list-tabletMenu-item {
+      padding: 0 20px 18px;
+      color: $lightPurple;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    &__content-title {
+      margin: 70px 0 20px;
+    }
+
+    &__offer-button {
+
+    }
+
+  }
+
+}
+
+
+@media (min-width: $desktop) {
+  .hero {
+    background-color: black;
+
+    &__img {
+      background-image: url("../img/header/header-content-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__navigation-list-tabletMenu {
+      display: none;
+    }
+
+
+    &__navigation-list-desktopMenu {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: -7%;
+      left: 30%;
+
+    }
+
+    &__navigation-list-desktopMenu-item {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 17px;
+      color: $lightPurple;
+      padding: 0 22px;
+    }
+
+    &__navigation-logo-text-desktop {
+      position: absolute;
+      right: 0;
+      left: 7%;
+      display: block;
+      font-size: 24px;
+      line-height: 16px;
+      color: $lightPurple;
+    }
+
+    &__navigation-logo:hover .hero__navbar-logo-img {
+      content: url("../img/header/header-logo-nafigation-white.svg");
+    }
+
+    &__navigation-logo-text:hover {
+      color: $whiteColor;
+    }
+
+    &__navigation-list-desktopMenu-item:hover {
+      color: $whiteColor;
+    }
+
+    &__navigation-logo-text-desktop:hover {
+      background-color: $whiteColor;
+      color: $lightPurple;
+    }
+
+    &__navbar-button:hover {
+      background-color: $whiteColor;
+    }
+
+    &__navbar-button-text:hover {
+      color: $lightPurple;
+    }
+
+    &__offer-button:hover {
+      background-color: $whiteColor;
+      color: $lightPurple;
+      border: 1px solid black;
+    }
+
+  }
+}
+
