@@ -631,7 +631,7 @@ a {
 }
 .present-text {
   text-align: center;
-  padding: 52px 24px 88px;
+  padding: 52px 0 88px;
 }
 .present-text__title {
   font-weight: 700;
@@ -654,6 +654,7 @@ a {
   column-gap: 15px;
 }
 .present-text__buttons {
+  max-width: 140px;
   font-size: 12px;
   line-height: 20px;
   cursor: pointer;
@@ -679,9 +680,8 @@ a {
   border-radius: 6px;
 }
 .present-text__buttons-elements__link {
-  width: 100px;
   display: flex;
-  padding: 5px 17px;
+  padding: 5px 12px;
   color: #323232;
   background-color: #f6f8fa;
   border-top-left-radius: 4px;
