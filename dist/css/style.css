@@ -559,3 +559,125 @@ a {
 .present-text__buttons-elements__number {
   padding: 5px 10px;
 }
+
+@media screen and (max-width: 992px) and (min-width: 481px) {
+  .conteiner {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .present-text {
+    padding: 88px 40px 98px;
+  }
+  .present-text__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+  .present-text__content {
+    font-size: 21px;
+    line-height: 32px;
+  }
+  .present-text__option {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .present-text {
+    padding: 0 130px 70px;
+  }
+  .present-text__title {
+    font-size: 54px;
+    line-height: 54px;
+  }
+  .present-text__content {
+    font-size: 21px;
+    line-height: 32px;
+  }
+  .present-text__option {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.features {
+  padding: 32px 0 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 40px;
+}
+.features__titles {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #8D81AC;
+}
+.features__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.features__content-picture {
+  max-width: 110px;
+  max-height: 65px;
+}
+.features__content-title {
+  margin: 27px 0 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+}
+.features__content-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #848E97;
+}
+.features__last-picture {
+  max-height: 380px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 992px) and (min-width: 481px) {
+  .conteiner {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .features {
+    padding: 62px 30px 10px;
+  }
+  .features__titles {
+    font-size: 42px;
+    line-height: 44px;
+  }
+  .features__content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+  .features__content-information {
+    width: 70vw;
+    text-align: left;
+  }
+  .features__content-title {
+    margin: 0 0 14px;
+    line-height: 21px;
+  }
+  .features__last-picture {
+    max-height: 519px;
+    display: flex;
+    justify-content: end;
+  }
+}
+@media screen and (min-width: 993px) {
+  .conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -13,7 +13,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #323232;
+    color: $BlackColor;
     margin: 27px 0 36px;
   }
   &__option {
@@ -63,6 +63,52 @@
     }
     &__number {
       padding: 5px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 481px) {
+  .conteiner {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .present-text {
+    padding: 88px 40px 98px;
+    &__title {
+      font-size: 42px;
+      line-height: 42px;
+    }
+    &__content {
+      font-size: 21px;
+      line-height: 32px;
+    }
+    &__option {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .present-text {
+    padding: 0 130px 70px;
+    &__title {
+      font-size: 54px;
+      line-height: 54px;
+    }
+    &__content {
+      font-size: 21px;
+      line-height: 32px;
+    }
+    &__option {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
   }
 }
