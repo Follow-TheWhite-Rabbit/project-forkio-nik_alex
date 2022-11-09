@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second-Step-Project</title>
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/styles.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -14,7 +14,10 @@
 
 <header class="hero">
 <div class="hero__navbar">
-<img class="hero__navbar-logo" src="dist/img/header/header-logo-navigation.svg">
+    <div class="hero__navigation-logo">
+        <img class="hero__navbar-logo-img" src="dist/img/header/header-logo-navigation.svg" alt="">
+        <p class="hero__navigation-logo-text">Forkio</p>
+    </div>
     <button class="hero__navbar-button"><p class="hero__navbar-button-text">Buy Now</p></button>
     <div class="hero__burger-button">
         <div class="hero__burger">
@@ -31,12 +34,28 @@
                 <button class="hero__content-burgerMenu-item">Buying Options</button>
                 <button class="hero__content-burgerMenu-item">Support</button>
             </div>
+        <div class="hero__navigation-list-tabletMenu">
+            <a class="hero__navigation-list-tabletMenu-item">Overview</a>
+            <a class="hero__navigation-list-tabletMenu-item">About Fork</a>
+            <a class="hero__navigation-list-tabletMenu-item">Buying Options</a>
+            <a class="hero__navigation-list-tabletMenu-item">Support</a>
+        </div>
+        <div class="hero__navigation-list-desktopMenu">
+            <a class="hero__navigation-list-desktopMenu-item">Overview</a>
+            <a class="hero__navigation-list-desktopMenu-item">About Fork</a>
+            <a class="hero__navigation-list-desktopMenu-item">Buying Options</a>
+            <a class="hero__navigation-list-desktopMenu-item">Support</a>
+        </div>
         <div class="hero__content hero__img container">
             <h1 class="hero__content-title">Fork App</h1>
             <p class="hero__content-text">A Real Gamechanger In The World Of Web-Development</p>
             <p class="hero__content-text-for">v. 2.8 For Mac and Windows</p>
         </div>
     </div>
+    </div>
+    <div class="hero__offer">
+        <button class="hero__offer-button">Download For Free Now</button>
+        <div class="hero__offer-text">Unlimited 30-Days Trial Period</div>
     </div>
 </header>
 
