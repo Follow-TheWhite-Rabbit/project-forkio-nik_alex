@@ -694,3 +694,106 @@ a {
 .present-text__buttons-elements__number {
   padding: 5px 10px;
 }
+
+.testimonial__background {
+  background-image: url("../img/testimonial/testmonials-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonial__about {
+  position: relative;
+}
+.testimonial__about-title {
+  padding-top: 57px;
+  font-size: 36px;
+  line-height: 48px;
+  color: white;
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.testimonial__about-posts-item {
+  flex-direction: column;
+  text-align: center;
+}
+.testimonial__about-posts-pictures {
+  height: 64px;
+  align-items: flex-end;
+  margin: 45px 0 22px;
+}
+.testimonial__about-posts-item-text {
+  margin: 0 0 0 30px;
+  text-align: center;
+  width: 80%;
+  font-weight: 700;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+.testimonial__about-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #A291A5;
+  text-align: center;
+  width: 80%;
+  margin: 37px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  padding: 33px;
+}
+.testimonial__about-text:after {
+  content: "";
+  height: 2px;
+  background-color: #645766;
+  width: 90%;
+  margin: 22px 0 0;
+}
+
+@media (min-width: 481px) {
+  .testimonial__background {
+    background-image: url("../img/testimonial/testimonial-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .testimonial__about-title {
+    padding-top: 85px;
+    width: 90%;
+    margin: 0 auto 24px;
+  }
+  .testimonial__about-posts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .testimonial__about-posts-item {
+    max-width: 50%;
+    margin-top: 56px;
+  }
+  .testimonial__about-text {
+    width: 90%;
+    margin-top: 68px;
+  }
+}
+@media (min-width: 993px) {
+  .testimonial__background {
+    background-image: url("../img/testimonial/testmonial-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .testimonial__about-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .testimonial__about-posts-item {
+    max-width: 100%;
+  }
+  .testimonial__about-text {
+    width: 68%;
+    margin-top: 0;
+  }
+}
