@@ -1,7 +1,6 @@
 .present-text {
   text-align: center;
-  padding: 52px 0 88px;
-  
+  padding: 120px 0 88px;
   &__title {
     font-weight: 700;
     font-size: 26px;
@@ -73,7 +72,7 @@
     margin: 0 auto;
   }
   .present-text {
-    padding: 88px 40px 98px;
+    padding: 150px 40px 98px;
     &__title {
       font-size: 42px;
       line-height: 42px;
@@ -96,7 +95,7 @@
     margin: 0 auto;
   }
   .present-text {
-    padding: 0 130px 70px;
+    padding: 130px 130px 70px;
     &__title {
       font-size: 54px;
       line-height: 54px;
@@ -109,6 +108,9 @@
       display: flex;
       justify-content: center;
       gap: 20px;
+    }
+    &__buttons {
+      max-width: 170px;
     }
   }
 }
