@@ -1,14 +1,20 @@
+.features-conteiner {
+  max-width: 320px;
+  margin: 0 auto;
+}
 .features {
   padding: 32px 0 10px;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 40px;
+  overflow: hidden;
   &__titles {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     color: $lightPurple;
+    padding: 0 43px;
   }
   &__content {
     align-items: center;
@@ -46,7 +52,7 @@
 }
 
 @media screen and (max-width: 992px) and (min-width: 481px) {
-  .conteiner {
+  .features-conteiner {
     max-width: 768px;
     margin: 0 auto;
   }
@@ -83,30 +89,32 @@
 }
 
 @media screen and (min-width: 993px) {
-  .conteiner {
-    max-width: 1200px;
+  .features-conteiner {
+    max-width: 1380px;
     margin: 0 auto;
   }
-  .features {
+  .features-items {
     background: #F4F4F4;
+  }
+  .features {
+
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(2, 50%);
+    //grid-template-rows: repeat(4, 1fr);
     //height: 655px;
-    padding: 0 0 10px;
+    padding: 100px 0 10px;
     row-gap: 0;
     &__titles {
       font-size: 48px;
       line-height: 50px;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       padding-left: 20px;
     }
     &__content {
       flex-direction: row;
       justify-content: space-evenly;
       gap: 40px;
-      height: 110px;
       &-information {
         width: 30vw;
         text-align: left;
@@ -125,27 +133,27 @@
     }
     &__content:nth-child(2) {
       grid-column: 1/2;
-      grid-row: 2/4;
+      grid-row: 1/2;
     }
     &__content:nth-child(3) {
       grid-column: 1/2;
-      grid-row: 4/6;
+      grid-row: 2/4;
     }
     &__content:nth-child(4) {
       grid-column: 1/2;
-      grid-row: 6/8;
+      grid-row: 4/6;
     }
     &__content:nth-child(5) {
       grid-column: 1/2;
-      grid-row: 8/10;
+      grid-row: 6/8;
     }
     &__titles:first-child {
       grid-column: 2/3;
-      grid-row: 2/3;
+      grid-row: 1/2;
     }
     &__last-picture:last-child {
       grid-column: 2/3;
-      grid-row: 3/10;
+      grid-row: 2/8;
     }
   }
 }
