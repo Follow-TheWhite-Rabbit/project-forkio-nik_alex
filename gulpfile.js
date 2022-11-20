@@ -26,6 +26,7 @@ const minifyImages = () => gulp.src('src/img/**/*')
     .pipe(gulp.dest('dist/img'))
 
 
+
 const cleanDist = () => gulp.src('dist/*', {read: false}).pipe(clean())
 
 
